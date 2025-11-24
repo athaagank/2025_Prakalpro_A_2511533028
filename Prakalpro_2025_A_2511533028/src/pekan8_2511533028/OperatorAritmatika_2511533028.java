@@ -16,6 +16,7 @@ import javax.swing.JButton;
 import javax.swing.DefaultComboBoxModel;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.Color;
 
 public class OperatorAritmatika_2511533028 extends JFrame {
 
@@ -57,6 +58,7 @@ public class OperatorAritmatika_2511533028 extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 330, 298);
 		txthasil = new JPanel();
+		txthasil.setBackground(new Color(192, 192, 192));
 		txthasil.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(txthasil);
 		txthasil.setLayout(null);
@@ -113,13 +115,13 @@ public class OperatorAritmatika_2511533028 extends JFrame {
 				int a = Integer.parseInt(txtBil1.getText());
 				int b = Integer.parseInt(txtBil2.getText());
 				int c = cbOperator.getSelectedIndex();
-				int hasil = 0;
-				if(c==0) {hasil=a+b;}
-				if(c==1) {hasil=a-b;}
-				if(c==2) {hasil=a*b;}
-				if(c==3) {hasil=a/b;}
-				if(c==4) {hasil=a%b;} 
-					} catch (NumberFormatException ex) {
+				if(c==0) {}
+				if(c==1) {}
+				if(c==2) {}
+				if(c==3) {}
+				if(c==4) {} 
+					}
+					catch (NumberFormatException ex) {
 					pesanEror("Bilangan 1 dan Bilangan 2 harus angka");
 				}
 			}
